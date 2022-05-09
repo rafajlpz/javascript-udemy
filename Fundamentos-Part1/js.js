@@ -1,27 +1,47 @@
-// 1. Set the value of 'language' to the language spoken where you live (some countries have multiple languages, but just choose one)
+/*
+Coding Challenge #1
 
-// 2. Think about which variables should be const variables (which values will never change, and which might change?). Then, change these variables to const.
+Mark and John are trying to compare their BMI (Body Mass Index), which is
+calculated using the formula:
 
-// 3. Try to change one of the changed variables now, and observe what happens
+BMI = mass / height ** 2 = mass / (height * height) (mass in kg
+and height in meter).
+Your tasks:
 
-// const country = "Spain";
-// const continent = "Europe";
-// let population = 47.35+" "+"Millions";
-// let isIsland = false;
-// let language = "Spanish";
+1. Store Mark's and John's mass and height in variables
 
-// console.log(country,continent,population);
+2. Calculate both their BMIs using the formula (you can even implement both
+versions)
 
-// console.log(typeof isIsland, typeof population, typeof country, typeof language);
+3. Create a Boolean variable 'markHigherBMI' containing information about
+whether Mark has a higher BMI than John.
 
-let x = 10 + 5 // 15
-x += 10 //Es lo mismo que x = x + 10 = 25
-x *= 4; //Es lo mismo que  x = x * 4 = 100
-x++; //Es a;adirle uno mas. Osea 101
+Test data:
+§ Data 1: Marks weights 78 kg and is 1.69 m tall. John weights 92 kg and is 1.95
+m tall.
+§ Data 2: Marks weights 95 kg and is 1.88 m tall. John weights 85 kg and is 1.76
+m tall.
+*/
 
-console.log(x);
+let massMark = 78;
+let massJohn = 95;
 
-let a, y;
-a = y = 25 - 10 - 5; // x = y = 10, x = 10 //El codigo se lee de derecha a izquierda por eso a e y dan 10 en este caso, sino fuese al reves y seria unndefined
+let heightMark = 1.69;
+let heightJohn = 1.88;
+
+// BMI = mass / height ** 2 = mass / (height * height);
+
+let markBMI = massMark / (heightMark * heightMark);
+console.log(markBMI);
+
+let johnkBMI = massJohn / (heightJohn * heightJohn);
+console.log(johnkBMI);
+
+
+let markHigherBMI = markBMI > johnkBMI;
+
+console.log(markHigherBMI);
+
+
 
 
