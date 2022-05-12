@@ -23,24 +23,40 @@ m tall.
 m tall.
 */
 
-let massMark = 78;
-let massJohn = 95;
+// let massMark = 78;
+// let massJohn = 95;
 
-let heightMark = 1.69;
-let heightJohn = 1.88;
+// let heightMark = 1.69;
+// let heightJohn = 1.88;
 
-// BMI = mass / height ** 2 = mass / (height * height);
+// // BMI = mass / height ** 2 = mass / (height * height);
 
-let markBMI = massMark / (heightMark * heightMark);
-console.log(markBMI);
+// let markBMI = massMark / (heightMark * heightMark);
+// console.log(markBMI);
 
-let johnkBMI = massJohn / (heightJohn * heightJohn);
-console.log(johnkBMI);
+// let johnkBMI = massJohn / (heightJohn * heightJohn);
+// console.log(johnkBMI);
 
 
-let markHigherBMI = markBMI > johnkBMI;
+// let markHigherBMI = markBMI > johnkBMI;
 
-console.log(markHigherBMI);
+// console.log(markHigherBMI);
+
+const firstName = 'Rafael';
+const job = 'developer';
+const birthYear = 1994;
+const year = 2022;
+
+const rafa = `Soy ${firstName}, 
+trabajo en Cersia como ${job} 
+y mi edad es ${year-birthYear}`;
+
+console.log(rafa);
+// Para hacer un salto de linea o nueva linea en javascript hay que usar \n\ al final de la expresion
+console.log('Probando salto de linea \n\
+probando...\n\
+probando...');
+// Pero usando template literal se consigue lo mismo
 
 
 
