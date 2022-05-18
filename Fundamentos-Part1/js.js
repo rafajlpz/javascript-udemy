@@ -68,24 +68,32 @@ BMI (28.3) is higher than John's (23.9)!"
 Hint: Use an if/else statement 
 GOOD LUCK 
 */
-let massMark = 78;
-let massJohn = 95;
-let heightMark = 1.69;
-let heightJohn = 1.88;
+// let massMark = 78;
+// let massJohn = 95;
+// let heightMark = 1.69;
+// let heightJohn = 1.88;
 
-let markBMI = massMark / (heightMark * heightMark);
-let johnBMI = massJohn / (heightJohn * heightJohn);
+// let markBMI = massMark / (heightMark * heightMark);
+// let johnBMI = massJohn / (heightJohn * heightJohn);
 
-if(markBMI>johnBMI){
-    console.log(`
-    El BMI de Mark: 
-    ${markBMI},
-    es superior al de John: 
-    ${johnBMI}`)
-} else {
-    console.log(`
-    El BMI de John: 
-    ${johnBMI},
-    es superior al de Mark: 
-    ${markBMI}`)
-}
+// if(markBMI>johnBMI){
+//     console.log(`
+//     El BMI de Mark:
+//     ${markBMI},
+//     es superior al de John:
+//     ${johnBMI}`)
+// } else {
+//     console.log(`
+//     El BMI de John:
+//     ${johnBMI},
+//     es superior al de Mark:
+//     ${markBMI}`)
+// }
+
+const anyo = 1994;
+console.log(Number(anyo));
+console.log(String(28));
+
+let n = "1" + 1;
+n = n - 1;
+console.log(n);
