@@ -111,6 +111,33 @@ GOOD LUCK
 //     console.log('Trabaja hostia')
 // }
 
-const edad = '18'; //Es un strict
-if(edad === 18) console.log('Ya eres mayor de edad'); //Aqui le indico que sea codigo estricto
-if(edad == 18) console.log('Ya eres adulto (Sin ser estricto)');
+// const edad = '18'; //Es un strict
+// if(edad === 18) console.log('Ya eres mayor de edad'); //Aqui le indico que sea codigo estricto
+// if(edad == 18) console.log('Ya eres adulto (Sin ser estricto)');
+
+const carnetConducir = true;
+const buenaVista = true;
+
+//Si usamos && las dos tiene que ser verdaderas para que sea true
+console.log(carnetConducir && buenaVista); 
+//Si usamos || solo basta con que una sea verdadera para que de true
+console.log(carnetConducir || buenaVista);
+//Se convierte en NOT
+console.log(!carnetConducir); 
+
+// const deberiaConducir = carnetConducir && buenaVista;
+// if(deberiaConducir){
+//     console.log('Rafa esta capacitado para conducir')
+// } else {
+//     console.log('No estas en condiciones de conducir')
+// }
+
+const estaCansado = false;
+console.log(carnetConducir && buenaVista || estaCansado);
+
+const deberiaConducir = carnetConducir && buenaVista && !estaCansado;
+if(deberiaConducir){
+    console.log('Rafa esta capacitado para conducir')
+} else {
+    console.log('No estas en condiciones de conducir')
+}
