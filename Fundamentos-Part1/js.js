@@ -98,16 +98,19 @@ GOOD LUCK
 // n = n - 1;
 
 //Los valores booleanos que sean 0, indefinidos, string vacio, nulo son falsos.
-console.log(Boolean(0));
-console.log(Boolean(undefined));
-console.log(Boolean(''));
-console.log(Boolean(null));
-console.log(Boolean(NaN));
+// console.log(Boolean(0));
+// console.log(Boolean(undefined));
+// console.log(Boolean(''));
+// console.log(Boolean(null));
+// console.log(Boolean(NaN));
 
-const dinero = 0; //dinero al ser 0 es un valor booleano FALSO y da el ELSE como resultado
-if(dinero){
-    console.log('No lo gastes')
-} else {
-    console.log('Trabaja hostia')
-}
+// const dinero = 0; //dinero al ser 0 es un valor booleano FALSO y da el ELSE como resultado
+// if(dinero){
+//     console.log('No lo gastes')
+// } else {
+//     console.log('Trabaja hostia')
+// }
 
+const edad = '18'; //Es un strict
+if(edad === 18) console.log('Ya eres mayor de edad'); //Aqui le indico que sea codigo estricto
+if(edad == 18) console.log('Ya eres adulto (Sin ser estricto)');
