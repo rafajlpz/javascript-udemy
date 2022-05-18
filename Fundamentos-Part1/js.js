@@ -90,10 +90,24 @@ GOOD LUCK
 //     ${markBMI}`)
 // }
 
-const anyo = 1994;
-console.log(Number(anyo));
-console.log(String(28));
+// const anyo = 1994;
+// console.log(Number(anyo));
+// console.log(String(28));
 
-let n = "1" + 1;
-n = n - 1;
-console.log(n);
+// let n = "1" + 1;
+// n = n - 1;
+
+//Los valores booleanos que sean 0, indefinidos, string vacio, nulo son falsos.
+console.log(Boolean(0));
+console.log(Boolean(undefined));
+console.log(Boolean(''));
+console.log(Boolean(null));
+console.log(Boolean(NaN));
+
+const dinero = 0; //dinero al ser 0 es un valor booleano FALSO y da el ELSE como resultado
+if(dinero){
+    console.log('No lo gastes')
+} else {
+    console.log('Trabaja hostia')
+}
+
