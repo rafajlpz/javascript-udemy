@@ -203,24 +203,32 @@ GOOD LUCK � */
 //   console.log("Nadie gana");
 // }
 
-const dia = 'Lunes';
+// const dia = 'Lunes';
 
-switch(dia){
-    case 'Lunes': //Esto es lo mismo que poner dia==='Lunes' ES ESTRICTO
-        console.log('Inicio de semana duro');
-        console.log('Programar');
-        break;
-    case 'Martes':
-        console.log('Programar la APP');
-        break;
-    case 'Miercoles':
-        console.log('Audiovisuales');
-        break;
-    case 'Jueves':
-        console.log('Toca grabar para la TV');
-        break;
-    case 'Viernes':
-        console.log('Toca beber vino');
-    default:
-        console.log('Introduce un dia valido')
-}
+// switch(dia){
+//     case 'Lunes': //Esto es lo mismo que poner dia==='Lunes' ES ESTRICTO
+//         console.log('Inicio de semana duro');
+//         console.log('Programar');
+//         break;
+//     case 'Martes':
+//         console.log('Programar la APP');
+//         break;
+//     case 'Miercoles':
+//         console.log('Audiovisuales');
+//         break;
+//     case 'Jueves':
+//         console.log('Toca grabar para la TV');
+//         break;
+//     case 'Viernes':
+//         console.log('Toca beber vino');
+//     default:
+//         console.log('Introduce un dia valido')
+// }
+
+const edad = 18;
+// edad >= 18 ? console.log('Me gusta beber vino') : console.log('Me gusta beber agua'); //Es lo mismo que una declaracion if/else
+
+const beber = edad >= 18  ? 'Vino' : 'Agua';
+console.log(beber);
+
+console.log(`Me gusta beber ${edad<= 18 ? 'Vino' : 'Agua'} cuando hace calor`);
