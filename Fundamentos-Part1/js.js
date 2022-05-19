@@ -183,22 +183,44 @@ GOOD LUCK � */
 
 //BONUS 1
 
-const ScoreDelfines = (97 + 112 + 101) / 3;
-console.log('Average Delfines', ScoreDelfines);
+// const ScoreDelfines = (97 + 112 + 101) / 3;
+// console.log('Average Delfines', ScoreDelfines);
 
-const ScoreKoalas = (109 + 95 + 123) / 3;
-console.log('Average Koalas', ScoreKoalas);
+// const ScoreKoalas = (109 + 95 + 123) / 3;
+// console.log('Average Koalas', ScoreKoalas);
 
-if (ScoreDelfines > ScoreKoalas && ScoreDelfines >= 100) {
-  console.log("El average mas alto es el de los delfines");
-} else if (ScoreKoalas > ScoreDelfines && ScoreDelfines >= 100) {
-  console.log("Koalas tiene avg mas alto");
-} else if (
-  ScoreDelfines === ScoreKoalas &&
-  ScoreDelfines >= 100 &&
-  ScoreKoalas >= 100
-) {
-  console.log("Hay un empate");
-} else {
-  console.log("Nadie gana");
+// if (ScoreDelfines > ScoreKoalas && ScoreDelfines >= 100) {
+//   console.log("El average mas alto es el de los delfines");
+// } else if (ScoreKoalas > ScoreDelfines && ScoreDelfines >= 100) {
+//   console.log("Koalas tiene avg mas alto");
+// } else if (
+//   ScoreDelfines === ScoreKoalas &&
+//   ScoreDelfines >= 100 &&
+//   ScoreKoalas >= 100
+// ) {
+//   console.log("Hay un empate");
+// } else {
+//   console.log("Nadie gana");
+// }
+
+const dia = 'Lunes';
+
+switch(dia){
+    case 'Lunes': //Esto es lo mismo que poner dia==='Lunes' ES ESTRICTO
+        console.log('Inicio de semana duro');
+        console.log('Programar');
+        break;
+    case 'Martes':
+        console.log('Programar la APP');
+        break;
+    case 'Miercoles':
+        console.log('Audiovisuales');
+        break;
+    case 'Jueves':
+        console.log('Toca grabar para la TV');
+        break;
+    case 'Viernes':
+        console.log('Toca beber vino');
+    default:
+        console.log('Introduce un dia valido')
 }
