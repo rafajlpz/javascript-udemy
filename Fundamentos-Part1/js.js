@@ -115,15 +115,15 @@ GOOD LUCK
 // if(edad === 18) console.log('Ya eres mayor de edad'); //Aqui le indico que sea codigo estricto
 // if(edad == 18) console.log('Ya eres adulto (Sin ser estricto)');
 
-const carnetConducir = true;
-const buenaVista = true;
+// const carnetConducir = true;
+// const buenaVista = true;
 
-//Si usamos && las dos tiene que ser verdaderas para que sea true
-console.log(carnetConducir && buenaVista); 
-//Si usamos || solo basta con que una sea verdadera para que de true
-console.log(carnetConducir || buenaVista);
-//Se convierte en NOT
-console.log(!carnetConducir); 
+// //Si usamos && las dos tiene que ser verdaderas para que sea true
+// console.log(carnetConducir && buenaVista);
+// //Si usamos || solo basta con que una sea verdadera para que de true
+// console.log(carnetConducir || buenaVista);
+// //Se convierte en NOT
+// console.log(!carnetConducir);
 
 // const deberiaConducir = carnetConducir && buenaVista;
 // if(deberiaConducir){
@@ -132,12 +132,73 @@ console.log(!carnetConducir);
 //     console.log('No estas en condiciones de conducir')
 // }
 
-const estaCansado = false;
-console.log(carnetConducir && buenaVista || estaCansado);
+// const estaCansado = false;
+// console.log(carnetConducir && buenaVista || estaCansado);
 
-const deberiaConducir = carnetConducir && buenaVista && !estaCansado;
-if(deberiaConducir){
-    console.log('Rafa esta capacitado para conducir')
+// const deberiaConducir = carnetConducir && buenaVista && !estaCansado;
+// if(deberiaConducir){
+//     console.log('Rafa esta capacitado para conducir')
+// } else {
+//     console.log('No estas en condiciones de conducir')
+// }
+
+/*Coding Challenge #3
+
+There are two gymnastics teams, Dolphins and Koalas. They compete against each
+other 3 times. The winner with the highest average score wins a trophy!
+Your tasks:
+
+1. Calculate the average score for each team, using the test data below
+
+2. Compare the team's average scores to determine the winner of the competition,
+and print it to the console. Don't forget that there can be a draw, so test for that
+as well (draw means they have the same average score)
+
+3. Bonus 1: Include a requirement for a minimum score of 100. With this rule, a
+team only wins if it has a higher score than the other team, and the same time a
+score of at least 100 points. Hint: Use a logical operator to test for minimum
+score, as well as multiple else-if blocks �
+
+4. Bonus 2: Minimum score also applies to a draw! So a draw only happens when
+both teams have the same score and both have a score greater or equal 100
+points. Otherwise, no team wins the trophy
+
+Test data:
+§ Data 1: Dolphins score 96, 108 and 89. Koalas score 88, 91 and 110
+§ Data Bonus 1: Dolphins score 97, 112 and 101. Koalas score 109, 95 and 123
+§ Data Bonus 2: Dolphins score 97, 112 and 101. Koalas score 109, 95 and 106
+
+GOOD LUCK � */
+
+// const ScoreDelfines = (96 + 108 + 89) / 3;
+
+// const ScoreKoalas = (88 + 91 + 110) / 3;
+
+// if (ScoreDelfines > ScoreKoalas) {
+//   console.log("El average mas alto es el de los delfines");
+// } else if (ScoreKoalas > ScoreDelfines) {
+//   console.log("Koalas tiene avg mas alto");
+// } else if (ScoreDelfines === ScoreKoalas) {
+//   console.log("Hay un empate");
+
+//BONUS 1
+
+const ScoreDelfines = (97 + 112 + 101) / 3;
+console.log('Average Delfines', ScoreDelfines);
+
+const ScoreKoalas = (109 + 95 + 123) / 3;
+console.log('Average Koalas', ScoreKoalas);
+
+if (ScoreDelfines > ScoreKoalas && ScoreDelfines >= 100) {
+  console.log("El average mas alto es el de los delfines");
+} else if (ScoreKoalas > ScoreDelfines && ScoreDelfines >= 100) {
+  console.log("Koalas tiene avg mas alto");
+} else if (
+  ScoreDelfines === ScoreKoalas &&
+  ScoreDelfines >= 100 &&
+  ScoreKoalas >= 100
+) {
+  console.log("Hay un empate");
 } else {
-    console.log('No estas en condiciones de conducir')
+  console.log("Nadie gana");
 }
