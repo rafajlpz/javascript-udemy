@@ -75,24 +75,43 @@ Apply this to the team's average scores �
 GOOD LUCK �
 */
 
-const calcAverage = (a, b, c) => (a + b + c) / 3;
-// console.log(calcAverage(3,4,5))
+// const calcAverage = (a, b, c) => (a + b + c) / 3;
+// // console.log(calcAverage(3,4,5))
 
-//Test 1
-const scoreDolphins = calcAverage(85, 54, 41);
-const scoreKoalas = calcAverage(23, 34, 27);
-console.log(scoreDolphins, scoreKoalas);
+// //Test 1
+// const scoreDolphins = calcAverage(85, 54, 41);
+// const scoreKoalas = calcAverage(23, 34, 27);
+// console.log(scoreDolphins, scoreKoalas);
 
-const checkWinner = (avgDolphins, avgKoalas) => {
-  avgDolphins = scoreDolphins;
-  avgKoalas = scoreKoalas;
+// const checkWinner = (avgDolphins, avgKoalas) => {
+//   avgDolphins = scoreDolphins;
+//   avgKoalas = scoreKoalas;
 
-  if (avgDolphins >= 2 * avgKoalas) {
-    console.log(`Dolphins ganan ${scoreDolphins} a Koalas ${scoreKoalas}`);
-  } else if (avgKoalas >= 2 * avgDolphins) {
-    console.log(`Koalas ganan ${scoreKoalas} a Dolphins ${scoreDolphins}`);
-  } else {
-    console.log("Nadie gana");
-  }
-};
-checkWinner();
+//   if (avgDolphins >= 2 * avgKoalas) {
+//     console.log(`Dolphins ganan ${scoreDolphins} a Koalas ${scoreKoalas}`);
+//   } else if (avgKoalas >= 2 * avgDolphins) {
+//     console.log(`Koalas ganan ${scoreKoalas} a Dolphins ${scoreDolphins}`);
+//   } else {
+//     console.log("Nadie gana");
+//   }
+// };
+// checkWinner();
+
+
+//Funcion para calcular la edad
+const calcularEdad = (anyo) =>{
+    return 2022 - anyo;
+}
+
+//Array que almacena a;os
+const anyos = [1994, 2000, 2006];
+
+//Edades de cada persona
+const edad1 = calcularEdad(anyos[0]);
+const edad2 = calcularEdad(anyos[1]);
+const edad3 = calcularEdad(anyos[2]);
+console.log(edad1,edad2,edad3);
+
+//Almacenar las edades de cada persona en un array
+const edades = [calcularEdad(anyos[0]),calcularEdad(anyos[1]),calcularEdad(anyos[2])];
+console.log(edades);
