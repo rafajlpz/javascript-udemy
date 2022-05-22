@@ -22,10 +22,24 @@
 // Funcion Flecha
 // const calcularEdad = anyo => 2022 - anyo;
 
-const nuevaFuncionFlecha = anyo =>{
-    const edad = 2022 - anyo;
-    const jubilacion = 100 - edad;
-    return `Tu edad es de ${edad},
-    tu edad de jubilacion seria a los ${jubilacion}`;
+// const nuevaFuncionFlecha = anyo =>{
+//     const edad = 2022 - anyo;
+//     const jubilacion = 100 - edad;
+//     return `Tu edad es de ${edad},
+//     tu edad de jubilacion seria a los ${jubilacion}`;
+// }
+// console.log(nuevaFuncionFlecha(1994));
+
+function  cortarPiezaFruta(fruta){
+    return fruta * 4;
 }
-console.log(nuevaFuncionFlecha(1994));
+
+function procesadorDeFruta(manzanas, naranjas){
+    const piezaManzana = cortarPiezaFruta(manzanas);
+    const piezaNaranja = cortarPiezaFruta(naranjas);
+    
+    const zumo = `Zumo hecho con ${piezaManzana} piezas de manzana y ${piezaNaranja} piezas de naranja`;
+    return zumo;
+}
+
+console.log(procesadorDeFruta(5,2));
