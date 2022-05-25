@@ -99,19 +99,40 @@ GOOD LUCK �
 
 
 //Funcion para calcular la edad
-const calcularEdad = (anyo) =>{
-    return 2022 - anyo;
+// const calcularEdad = (anyo) =>{
+//     return 2022 - anyo;
+// }
+
+// //Array que almacena a;os
+// const anyos = [1994, 2000, 2006];
+
+// //Edades de cada persona
+// const edad1 = calcularEdad(anyos[0]);
+// const edad2 = calcularEdad(anyos[1]);
+// const edad3 = calcularEdad(anyos[2]);
+// console.log(edad1,edad2,edad3);
+
+// //Almacenar las edades de cada persona en un array
+// const edades = [calcularEdad(anyos[0]),calcularEdad(anyos[1]),calcularEdad(anyos[2])];
+// console.log(edades);
+
+const amigos = ["David", "Rafa", "Peter"];
+console.log(amigos);
+
+const newLength = amigos.push("Hector");
+console.log(newLength);
+console.log(amigos);
+
+
+amigos.unshift("Serg"); //Es un metodo que tiene la misma funcion que un push
+console.log(amigos);
+//Eliminar elementos de un array
+amigos.pop();
+console.log(amigos);
+
+console.log(amigos.indexOf('Peter'));
+console.log(amigos.includes("Rafa")); //Verifica si esta dentro del array
+
+if (amigos.includes("Rafa")){
+    console.log("El array incluye Rafa");
 }
-
-//Array que almacena a;os
-const anyos = [1994, 2000, 2006];
-
-//Edades de cada persona
-const edad1 = calcularEdad(anyos[0]);
-const edad2 = calcularEdad(anyos[1]);
-const edad3 = calcularEdad(anyos[2]);
-console.log(edad1,edad2,edad3);
-
-//Almacenar las edades de cada persona en un array
-const edades = [calcularEdad(anyos[0]),calcularEdad(anyos[1]),calcularEdad(anyos[2])];
-console.log(edades);
