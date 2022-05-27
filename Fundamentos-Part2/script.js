@@ -168,14 +168,34 @@ GOOD LUCK �
 
 // console.log(bills, tips, totales);
 
-const rafa = {
-    nombre: 'Rafa',
-    apellido: 'Lopez',
-    edad: '28',
-    trabajo: 'Programador',
-    amigos: ['David', 'Agus', 'Valentina']
-}
 // Challengue
 // "Rafa" tiene 3 amigos,  su mejor amigo  se llama David
 
-console.log(`${rafa.nombre} tiene ${rafa.amigos.length} amigos y su mejor amigo se llama ${rafa.amigos[0]}`)
+// console.log(`${rafa.nombre} tiene ${rafa.amigos.length} amigos y su mejor amigo se llama ${rafa.amigos[0]}`)
+
+const rafa = {
+  nombre: "Rafa",
+  apellido: "Lopez",
+  fechaNacimiento: 1994,
+  trabajo: "Programador",
+  amigos: ["David", "Agus", "Valentina"],
+  calcEdad: function () {
+    this.edad = 2022 - this.fechaNacimiento;
+    return this.edad;
+  },
+  licenciaConducir: true,
+  getSummary: function () {
+    return `${this.nombre} y es un ${
+      this.trabajo
+    } de ${this.calcEdad()} anyos de edad y ${
+      this.licenciaConducir ? "tiene" : "no tiene"
+    } licencia de conduccion`;
+  },
+};
+
+console.log(rafa.calcEdad());
+
+//Challenge
+//Rafa es un profesor de 28 anyos, y tiene licencia de conducir
+
+console.log(rafa.getSummary());
