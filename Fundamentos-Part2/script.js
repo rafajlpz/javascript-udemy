@@ -154,16 +154,28 @@ array) �
 GOOD LUCK �
 
 */
-const calcTip = (bill) => {
-  return bill >= 50 && bill <= 300 ? bill * 0.15 : bill * 0.2;
-};
-const bills = [125, 555, 44];
-const tips = [
-    calcTip(bills[0]), calcTip(bills[1]), calcTip(bills[2])
-];
+// const calcTip = (bill) => {
+//   return bill >= 50 && bill <= 300 ? bill * 0.15 : bill * 0.2;
+// };
+// const bills = [125, 555, 44];
+// const tips = [
+//     calcTip(bills[0]), calcTip(bills[1]), calcTip(bills[2])
+// ];
 
-const totales = [
-    bills[0] + tips[0], bills[1] + tips[1], bills[2] + tips[2]
-];
+// const totales = [
+//     bills[0] + tips[0], bills[1] + tips[1], bills[2] + tips[2]
+// ];
 
-console.log(bills, tips, totales);
+// console.log(bills, tips, totales);
+
+const rafa = {
+    nombre: 'Rafa',
+    apellido: 'Lopez',
+    edad: '28',
+    trabajo: 'Programador',
+    amigos: ['David', 'Agus', 'Valentina']
+}
+// Challengue
+// "Rafa" tiene 3 amigos,  su mejor amigo  se llama David
+
+console.log(`${rafa.nombre} tiene ${rafa.amigos.length} amigos y su mejor amigo se llama ${rafa.amigos[0]}`)
