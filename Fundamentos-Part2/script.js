@@ -217,26 +217,31 @@ tall.
 GOOD LUCK �
 */
 
-const BMIMark = 78 / (1.69 * 1.69);
-console.log(BMIMark);
-const BMIJohn = 92 / (1.95 * 1.95);
-console.log(BMIJohn);
+
 
 const Mark = {
   fullName: "Mark Miller",
   mass: 78,
   height: 1.69,
-  calcBMI: function() {
-   return this.mass / (this.height * this.height);
+  calcBMI: function () {
+   this.bmi = this.mass / (this.height * this.height);
+   return this.bmi;       
   }
 };
-console.log(Mark.calcBMI);
+console.log(Mark.calcBMI());
 
 const John = {
   fullName: "John Smith",
   mass: 92,
   height: 1.95,
-  calcBMI: () => {
-    this.mass / (this.height * this.height);
+  calcBMI: function()  {
+    this.bmi =  this.mass / (this.height * this.height);
+    return this.bmi    
   }
 };
+console.log(John.calcBMI());
+
+if(Mark.calcBMI() > John.calcBMI()){
+  console.log(`El BMI de ${Mark.fullName} '${Mark.bmi}' es superior al BMI '${John.bmi}' de ${John.fullName}`)
+} else {
+  console.log(`El BMI de ${John.fullName} '${John.bmi}' es superior al BMI '${Mark.bmi}' de ${Mark.fullName}`)}
