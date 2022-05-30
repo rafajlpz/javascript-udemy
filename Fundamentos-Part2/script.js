@@ -173,29 +173,70 @@ GOOD LUCK �
 
 // console.log(`${rafa.nombre} tiene ${rafa.amigos.length} amigos y su mejor amigo se llama ${rafa.amigos[0]}`)
 
-const rafa = {
-  nombre: "Rafa",
-  apellido: "Lopez",
-  fechaNacimiento: 1994,
-  trabajo: "Programador",
-  amigos: ["David", "Agus", "Valentina"],
-  calcEdad: function () {
-    this.edad = 2022 - this.fechaNacimiento;
-    return this.edad;
-  },
-  licenciaConducir: true,
-  getSummary: function () {
-    return `${this.nombre} y es un ${
-      this.trabajo
-    } de ${this.calcEdad()} anyos de edad y ${
-      this.licenciaConducir ? "tiene" : "no tiene"
-    } licencia de conduccion`;
-  },
+// const rafa = {
+//   nombre: "Rafa",
+//   apellido: "Lopez",
+//   fechaNacimiento: 1994,
+//   trabajo: "Programador",
+//   amigos: ["David", "Agus", "Valentina"],
+//   calcEdad: function () {
+//     this.edad = 2022 - this.fechaNacimiento;
+//     return this.edad;
+//   },
+//   licenciaConducir: true,
+//   getSummary: function () {
+//     return `${this.nombre} y es un ${
+//       this.trabajo
+//     } de ${this.calcEdad()} anyos de edad y ${
+//       this.licenciaConducir ? "tiene" : "no tiene"
+//     } licencia de conduccion`;
+//   },
+// };
+
+// console.log(rafa.calcEdad());
+
+// //Challenge
+// //Rafa es un profesor de 28 anyos, y tiene licencia de conducir
+
+// console.log(rafa.getSummary());
+
+/* Coding Challenge #3
+
+Let's go back to Mark and John comparing their BMIs! This time, let's use objects to implement the calculations! Remember: BMI = mass / height ** 2 = mass / (height * height) (mass in kg and height in meter)
+
+Your tasks:
+
+1. For each of them, create an object with properties for heir full name, mass, and height (Mark Miller and John Smith)
+
+2. Create a 'calcBMI' method on each object to calculate the BMI (the same method on both objects). Store the BMI value to a property, and also return it from the method
+
+3. Log to the console who has the higher BMI, together with the full name and the respective BMI. Example: "John's BMI (28.3) is higher than Mark's (23.9)!"
+
+Test data: Marks weights 78 kg and is 1.69 m tall. John weights 92 kg and is 1.95 m
+tall.
+GOOD LUCK �
+*/
+
+const BMIMark = 78 / (1.69 * 1.69);
+console.log(BMIMark);
+const BMIJohn = 92 / (1.95 * 1.95);
+console.log(BMIJohn);
+
+const Mark = {
+  fullName: "Mark Miller",
+  mass: 78,
+  height: 1.69,
+  calcBMI: function() {
+   return this.mass / (this.height * this.height);
+  }
 };
+console.log(Mark.calcBMI);
 
-console.log(rafa.calcEdad());
-
-//Challenge
-//Rafa es un profesor de 28 anyos, y tiene licencia de conducir
-
-console.log(rafa.getSummary());
+const John = {
+  fullName: "John Smith",
+  mass: 92,
+  height: 1.95,
+  calcBMI: () => {
+    this.mass / (this.height * this.height);
+  }
+};
