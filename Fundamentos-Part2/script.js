@@ -217,15 +217,13 @@ tall.
 GOOD LUCK �
 */
 
-
-
 // const Mark = {
 //   fullName: "Mark Miller",
 //   mass: 78,
 //   height: 1.69,
 //   calcBMI: function () {
 //    this.bmi = this.mass / (this.height * this.height);
-//    return this.bmi;       
+//    return this.bmi;
 //   }
 // };
 // console.log(Mark.calcBMI());
@@ -236,7 +234,7 @@ GOOD LUCK �
 //   height: 1.95,
 //   calcBMI: function()  {
 //     this.bmi =  this.mass / (this.height * this.height);
-//     return this.bmi    
+//     return this.bmi
 //   }
 // };
 // console.log(John.calcBMI());
@@ -255,6 +253,25 @@ GOOD LUCK �
 // console.log('Pruebaaa 7');
 // console.log('Pruebaaa 8');
 
-for(let prueba = 50; prueba<=10; prueba++){
-  console.log(`Pruebaaa ${prueba}`);
+// for(let prueba = 50; prueba<=10; prueba++){
+//   console.log(`Pruebaaa ${prueba}`);
+// }
+
+const jonas = [
+  "Jonas",
+  "Schmedtmann",
+  2037 - 1994,
+  "teacher",
+  ["Michael", "Peter", "Steven"],
+  true
+];
+
+const types = [];
+
+for(let i = 0; jonas.length>i; i++){
+  console.log(jonas[i], typeof jonas[i]);
+
+  types.push(typeof jonas[i])
 }
+
+console.log(types);
