@@ -219,29 +219,42 @@ GOOD LUCK �
 
 
 
-const Mark = {
-  fullName: "Mark Miller",
-  mass: 78,
-  height: 1.69,
-  calcBMI: function () {
-   this.bmi = this.mass / (this.height * this.height);
-   return this.bmi;       
-  }
-};
-console.log(Mark.calcBMI());
+// const Mark = {
+//   fullName: "Mark Miller",
+//   mass: 78,
+//   height: 1.69,
+//   calcBMI: function () {
+//    this.bmi = this.mass / (this.height * this.height);
+//    return this.bmi;       
+//   }
+// };
+// console.log(Mark.calcBMI());
 
-const John = {
-  fullName: "John Smith",
-  mass: 92,
-  height: 1.95,
-  calcBMI: function()  {
-    this.bmi =  this.mass / (this.height * this.height);
-    return this.bmi    
-  }
-};
-console.log(John.calcBMI());
+// const John = {
+//   fullName: "John Smith",
+//   mass: 92,
+//   height: 1.95,
+//   calcBMI: function()  {
+//     this.bmi =  this.mass / (this.height * this.height);
+//     return this.bmi    
+//   }
+// };
+// console.log(John.calcBMI());
 
-if(Mark.calcBMI() > John.calcBMI()){
-  console.log(`El BMI de ${Mark.fullName} '${Mark.bmi}' es superior al BMI '${John.bmi}' de ${John.fullName}`)
-} else {
-  console.log(`El BMI de ${John.fullName} '${John.bmi}' es superior al BMI '${Mark.bmi}' de ${Mark.fullName}`)}
+// if(Mark.calcBMI() > John.calcBMI()){
+//   console.log(`El BMI de ${Mark.fullName} '${Mark.bmi}' es superior al BMI '${John.bmi}' de ${John.fullName}`)
+// } else {
+//   console.log(`El BMI de ${John.fullName} '${John.bmi}' es superior al BMI '${Mark.bmi}' de ${Mark.fullName}`)}
+
+// console.log('Pruebaaa 1');
+// console.log('Pruebaaa 2');
+// console.log('Pruebaaa 3');
+// console.log('Pruebaaa 4');
+// console.log('Pruebaaa 5');
+// console.log('Pruebaaa 6');
+// console.log('Pruebaaa 7');
+// console.log('Pruebaaa 8');
+
+for(let prueba = 50; prueba<=10; prueba++){
+  console.log(`Pruebaaa ${prueba}`);
+}
