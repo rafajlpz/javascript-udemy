@@ -271,7 +271,12 @@ const types = [];
 for(let i = 0; jonas.length>i; i++){
   console.log(jonas[i], typeof jonas[i]);
 
-  types.push(typeof jonas[i])
+  types.push(typeof jonas[i]);
 }
 
 console.log(types);
+
+const years = [1990, 1994, 2000, 2010];
+const edad = [];
+
+for(let i = 0)
