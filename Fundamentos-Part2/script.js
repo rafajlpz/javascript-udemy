@@ -257,6 +257,49 @@ GOOD LUCK �
 //   console.log(`Pruebaaa ${prueba}`);
 // }
 
+// const jonas = [
+//   "Jonas",
+//   "Schmedtmann",
+//   2037 - 1994,
+//   "teacher",
+//   ["Michael", "Peter", "Steven"],
+//   true,
+// ];
+
+// const types = [];
+
+// for (let i = 0; jonas.length > i; i++) {
+//   console.log(jonas[i], typeof jonas[i]);
+
+//   types.push(typeof jonas[i]);
+// }
+
+// console.log(types);
+
+// const years = [1990, 1994, 2000, 2010];
+// const edad = [];
+
+// console.log(`***** Calcular la edad bucle en array *****`);
+// for (let i = 0; i < years.length; i++) {
+//   edad.push(2022 - years[i]);
+// }
+// console.log(edad);
+
+// //Continue and break
+// console.log(`* --- SOLO STRING --- *`)
+// for (let i = 0; i < jonas.length; i++) {
+//   if (typeof jonas[i] !== "string") continue;
+
+//   console.log(jonas[i], typeof jonas[i]);
+// }
+
+// console.log(`* ---  BREAK CON NUMERO --- *`)
+// for (let i = 0; i < jonas.length; i++) {
+//   if (typeof jonas[i] === "number") break;
+
+//   console.log(jonas[i], typeof jonas[i]);
+// }
+
 const jonas = [
   "Jonas",
   "Schmedtmann",
@@ -265,37 +308,3 @@ const jonas = [
   ["Michael", "Peter", "Steven"],
   true,
 ];
-
-const types = [];
-
-for (let i = 0; jonas.length > i; i++) {
-  console.log(jonas[i], typeof jonas[i]);
-
-  types.push(typeof jonas[i]);
-}
-
-console.log(types);
-
-const years = [1990, 1994, 2000, 2010];
-const edad = [];
-
-console.log(`***** Calcular la edad bucle en array *****`);
-for (let i = 0; i < years.length; i++) {
-  edad.push(2022 - years[i]);
-}
-console.log(edad);
-
-//Continue and break
-console.log(`* --- SOLO STRING --- *`)
-for (let i = 0; i < jonas.length; i++) {
-  if (typeof jonas[i] !== "string") continue;
-
-  console.log(jonas[i], typeof jonas[i]);
-}
-
-console.log(`* ---  BREAK CON NUMERO --- *`)
-for (let i = 0; i < jonas.length; i++) {
-  if (typeof jonas[i] === "number") break;
-
-  console.log(jonas[i], typeof jonas[i]);
-}
