@@ -300,22 +300,38 @@ GOOD LUCK �
 //   console.log(jonas[i], typeof jonas[i]);
 // }
 
-const jonas = [
-  "Jonas",
-  "Schmedtmann",
-  2037 - 1994,
-  "teacher",
-  ["Michael", "Peter", "Steven"],
-];
+// const jonas = [
+//   "Jonas",
+//   "Schmedtmann",
+//   2037 - 1994,
+//   "teacher",
+//   ["Michael", "Peter", "Steven"],
+// ];
 
-// for (let i = jonas.length - 1; i >= 0; i--) {
-//   console.log(i, jonas[i])
-// };
+// // for (let i = jonas.length - 1; i >= 0; i--) {
+// //   console.log(i, jonas[i])
+// // };
 
-for(let exercise = 1; exercise <= 4; exercise++){
-  console.log(`Empezando ejercicio ${exercise}`);
+// for(let exercise = 1; exercise <= 4; exercise++){
+//   console.log(`Empezando ejercicio ${exercise}`);
 
-  for(let rep = 1; rep < 6; rep++){
-    console.log(`Ejercicio ${exercise} : Serie con peso repeticion ${rep}`)
-  }
+//   for(let rep = 1; rep < 6; rep++){
+//     console.log(`Ejercicio ${exercise} : Serie con peso repeticion ${rep}`)
+//   }
+// }
+
+let rep = 1;
+while (rep <= 10) {
+  // console.log(`WHILE Ejercicio con peso repeticion ${rep}`);
+  rep++;
+}
+
+let dado = Math.trunc(Math.random() * 6) +1;
+
+
+while (dado !== 6){
+  console.log(`You rolled a ${dado}`);
+  dado = Math.trunc(Math.random() * 6) +1;
+  if(dado === 6) console.log('Bucle esta cerca de acabar...')
+
 }
