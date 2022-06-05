@@ -371,28 +371,61 @@ length of the array (because that's the number of elements)
 GOOD LUCK 
 */
 
-const calcPropina = (propina) => {
-  return propina >= 50 && propina <= 300 ? propina * 0.15 : propina * 0.2;
-};
+// const calcPropina = (propina) => {
+//   return propina >= 50 && propina <= 300 ? propina * 0.15 : propina * 0.2;
+// };
 
-const facturas = [22, 295, 176, 440, 37, 105, 10, 1100, 86, 52];
-const propinas = [];
-const totales = [];
+// const facturas = [22, 295, 176, 440, 37, 105, 10, 1100, 86, 52];
+// const propinas = [];
+// const totales = [];
 
-for (let i = 0; facturas.length > i; i++) {
-  const propina = calcPropina(facturas[i]);
-  propinas.push(propina);
-  totales.push(propina + facturas[i]);
-}
+// for (let i = 0; facturas.length > i; i++) {
+//   const propina = calcPropina(facturas[i]);
+//   propinas.push(propina);
+//   totales.push(propina + facturas[i]);
+// }
 
-console.log(facturas, propinas, totales);
+// console.log(facturas, propinas, totales);
 
-const calcAverage = function(arr){
-  let sum = 0;
+// const calcAverage = function (arr) {
+//   let sum = 0;
+//   for (let i = 0; i < arr.length; i++) {
+//     sum = sum + arr[i];
+//   }
+//   return sum / arr.length;
+// };
+// calcAverage([2, 6, 2]);
+// console.log(calcAverage(totales));
+
+/*
+Coding Challenge #1
+
+Given an array of forecasted maximum temperatures, the thermometer displays a string with the given temperatures. Example: [17, 21, 23] will print "... 17ºC in 1 days ... 21ºC in 2 days ... 23ºC in 3 days ..."
+
+Your tasks:
+1. Create a function 'printForecast' which takes in an array 'arr' and logs a string like the above to the console. Try it with both test datasets.
+
+2. Use the problem-solving framework: Understand the problem and break it up into sub-problems!
+
+Test data:
+§ Data 1: [17, 21, 23]
+§ Data 2: [12, 5, -5, 0, 4]
+
+GOOD LUCK 
+*/
+
+const tempMax = [17, 21, 23];
+const tempBaja = [12, 5, -5, 0, 4];
+
+const printForecast = (arr) =>{
+  let string = '';
   for(let i = 0; i < arr.length; i++){
-    sum = sum + arr[i];
+     string = string + `${arr[i]}C en ${i +1} dias... `
   }
-  return sum / arr.length
+  console.log(string);
 }
-calcAverage([2,6,2]);
-console.log(calcAverage(totales));
+printForecast(tempMax);
+
+console.log(`${tempBaja[0]} en 1 dia... ${tempBaja[1]} en 2 dias... ${tempBaja[2]} en 3 dias...`);
+
+console.log(typeof(string))
