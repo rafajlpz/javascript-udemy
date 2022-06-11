@@ -8,6 +8,7 @@ let numeroSecreto = Math.floor(Math.random() * 80) + 1;
 console.log(numeroSecreto);
 
 let vidas = 5;
+let aciertos = 0;
 
 btnCheck.onclick = () => {
   let guess = Number(document.querySelector('.guess').value);
@@ -18,6 +19,8 @@ btnCheck.onclick = () => {
     document.querySelector('.adivina').textContent = `✨ Acertaste!!!`;
     document.querySelector('.number').textContent = numeroSecreto;
     contenido.style.backgroundColor = `green`;
+    aciertos++;
+    document.querySelector('.highscore').textContent = aciertos;
 
   } else if (guess > numeroSecreto) {
     if (vidas > 1) {
