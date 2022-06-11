@@ -4,19 +4,21 @@ const btnCheck = document.querySelector('.check');
 const btnAgain = document.querySelector('.again');
 const contenido = document.querySelector('.contenido');
 
-const numeroSecreto = Math.floor(Math.random() * 80) + 1;
+let numeroSecreto = Math.floor(Math.random() * 80) + 1;
 console.log(numeroSecreto);
 
 let vidas = 5;
 
 btnCheck.onclick = () => {
-  const guess = Number(document.querySelector('.guess').value);
+  let guess = Number(document.querySelector('.guess').value);
 
   if (!guess) {
     document.querySelector('.message').textContent = `🚫 Introduce un numero!!`;
   } else if (guess === numeroSecreto) {
     document.querySelector('.adivina').textContent = `✨ Acertaste!!!`;
+    document.querySelector('.number').textContent = numeroSecreto;
     contenido.style.backgroundColor = `green`;
+
   } else if (guess > numeroSecreto) {
     if (vidas > 1) {
       document.querySelector('.adivina').textContent = `Te pasaste...`;
@@ -41,5 +43,13 @@ btnCheck.onclick = () => {
 };
 
 btnAgain.onclick = () => {
-  location.reload();
+  numeroSecreto = Math.floor(Math.random() * 80) + 1;
+  console.log(numeroSecreto);
+  vidas = 5;
+
+  document.querySelector('.adivina').textContent = `Adivina Mi Numero!`;
+  document.querySelector('.number').textContent = `?`;
+  Number((document.querySelector('.guess').value = ''));
+
+  contenido.style.backgroundColor = `#222`;
 };
