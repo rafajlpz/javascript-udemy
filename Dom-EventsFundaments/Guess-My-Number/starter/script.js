@@ -53,6 +53,8 @@ btnAgain.onclick = () => {
   document.querySelector('.adivina').textContent = `Adivina Mi Numero!`;
   document.querySelector('.number').textContent = `?`;
   Number((document.querySelector('.guess').value = ''));
+  document.querySelector('.score').textContent = vidas;
+
 
   contenido.style.backgroundColor = `#222`;
 };
