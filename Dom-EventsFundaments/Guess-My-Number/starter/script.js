@@ -22,28 +22,22 @@ btnCheck.onclick = () => {
     aciertos++;
     document.querySelector('.highscore').textContent = aciertos;
 
-  } else if (guess > numeroSecreto) {
-    if (vidas > 1) {
-      document.querySelector('.adivina').textContent = `Te pasaste...`;
-      vidas--;
-      document.querySelector('.score').textContent = vidas;
-    } else {
-      document.querySelector('.adivina').textContent = `💥 Perdiste...!!!`;
-      document.querySelector('.score').textContent = 0;
-      contenido.style.backgroundColor = `red`;
-    }
-  } else if (guess < numeroSecreto) {
-    if (vidas > 1) {
-      document.querySelector('.adivina').textContent = `Es mas alto...`;
-      vidas--;
-      document.querySelector('.score').textContent = vidas;
-    } else {
-      document.querySelector('.adivina').textContent = `💥 Perdiste...!!!`;
-      document.querySelector('.score').textContent = 0;
-      contenido.style.backgroundColor = `red`;
+  } else if (guess !== numeroSecreto){
+    if (vidas > 1){
+        document.querySelector('.adivina').textContent = guess > numeroSecreto ?  `Te pasaste...` : `Es mas alto...`;
+        vidas--;
+        document.querySelector('.score').textContent = vidas;
+    } else{
+        document.querySelector('.number').textContent = numeroSecreto;
+        document.querySelector('.score').textContent = 0
+        contenido.style.backgroundColor = `red`
+        document.querySelector('.adivina').textContent = `Perdiste...!!`
     }
   }
+  
+  
 };
+
 
 btnAgain.onclick = () => {
   numeroSecreto = Math.floor(Math.random() * 80) + 1;
