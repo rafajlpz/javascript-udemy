@@ -15,6 +15,11 @@ const abrir = () => {
   cubrir.classList.remove('hidden');
 };
 
+// -> Existen 3 eventos para el teclado, Aqui usamos keydown al pulsar, a;adimos una funcion con el evento y la condicion de la propiedad igual al string que haga la funcion cerrar <- //
+const pulsar = document.addEventListener('keydown', e => {
+  if (e.key === 'Escape') cerrar();
+});
+
 for (let i = 0; i < abrirModal.length; i++) {
   abrirModal[i].onclick = () => abrir();
 }
