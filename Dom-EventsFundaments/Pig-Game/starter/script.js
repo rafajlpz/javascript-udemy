@@ -14,14 +14,28 @@ const current1 = document.querySelector('#current--1');
 const jugador0 = document.querySelector('.player--0');
 const jugador1 = document.querySelector('.player--1');
 
-const scores = [0, 0];
-let currentScore = 0;
-let jugadorActivo = 0;
-let seguirJugando = true;
+let scores, currentScore, jugadorActivo, seguirJugando;
 
-score0.textContent = 0;
-score1.textContent = 0;
-dado.classList.add('hidden');
+// -> Iniciar condiciones <- //
+const inicializar = () => {
+  scores = [0, 0];
+  currentScore = 0;
+  jugadorActivo = 0;
+  seguirJugando = true;
+
+  score0.textContent = 0;
+  score1.textContent = 0;
+  current0.textContent = 0;
+  current1.textContent = 0;
+
+  dado.classList.add('hidden');
+  jugador0.classList.remove('player--winner');
+  jugador1.classList.remove('player--winner');
+  jugador0.classList.add('player--active');
+  jugador1.classList.remove('player--active');
+};
+
+inicializar();
 
 const cambiarJugador = () => {
   // -> Cambiar de jugador y reseteo<-- //
@@ -62,10 +76,10 @@ hold.onclick = () => {
       scores[jugadorActivo];
 
     // 2 Checkear si el score del jugar es > o = a 100
-    if (scores[jugadorActivo] >= 20) {
+    if (scores[jugadorActivo] >= 100) {
       // Acabar el juego
       seguirJugando = false;
-    dado.classList.add('hidden');
+      dado.classList.add('hidden');
 
       document
         .querySelector(`.player--${jugadorActivo}`)
@@ -78,4 +92,8 @@ hold.onclick = () => {
       cambiarJugador();
     }
   }
+};
+
+newgame.onclick = () => {
+  inicializar();
 };
