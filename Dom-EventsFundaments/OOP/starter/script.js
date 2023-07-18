@@ -55,9 +55,31 @@ class PersonCl {
   calcularEdad() {
     console.log(2023 - this.anioNacimiento);
   }
+  get age() {
+    return 2023 - this.anioNacimiento;
+  }
 }
 
 const jessica = new PersonCl('Jessica', 1996);
-console.log(jessica);
+//console.log(jessica);
 
-jessica.calcularEdad();
+//jessica.calcularEdad();
+
+
+
+const account = {
+    owner: 'Rafael',
+    movements: [200, 530, 120, 300],
+
+    get latest(){
+        return this.movements.slice(-1).pop();
+    },
+
+    set latest(mov){
+    this.movements.push(mov);
+    }
+};
+
+console.log(account.latest)
+account.latest = 50;
+console.log(account.movements);
