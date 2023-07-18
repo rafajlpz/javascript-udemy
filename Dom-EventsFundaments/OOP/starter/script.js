@@ -31,18 +31,33 @@ const Car = function (make, speed) {
   this.speed = speed;
 };
 
-Car.prototype.accelerate = function(){
-    this.speed += 10;
-    console.log(`${this.make} is going at ${this.speed} km/h`)
-}
+Car.prototype.accelerate = function () {
+  this.speed += 10;
+  console.log(`${this.make} is going at ${this.speed} km/h`);
+};
 
-Car.prototype.brake = function(){
-    this.speed -= 5;
-    console.log(`${this.make} is going at ${this.speed} km/h`)
-}
+Car.prototype.brake = function () {
+  this.speed -= 5;
+  console.log(`${this.make} is going at ${this.speed} km/h`);
+};
 
 const bmw = new Car('BMW', 120);
 const mercedes = new Car('Mercedes', 95);
 
 bmw.accelerate();
 bmw.accelerate();
+
+class PersonCl {
+  constructor(primerNombre, anioNacimiento) {
+    this.primerNombre = primerNombre;
+    this.anioNacimiento = anioNacimiento;
+  }
+  calcularEdad() {
+    console.log(2023 - this.anioNacimiento);
+  }
+}
+
+const jessica = new PersonCl('Jessica', 1996);
+console.log(jessica);
+
+jessica.calcularEdad();
